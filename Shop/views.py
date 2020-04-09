@@ -1,14 +1,14 @@
 from django.http import HttpResponse
-from .models import Products
+from .models import Product
 # Create your views here.
 
 def crud(request):
-    prod = Products(
+    prod = Product(
         name = 'Sunglasses', desc = 'UV rays protected', price = 1800, discount = 10, 
         category = 'Opticals', created_at = '2020-02-01'
     )
     prod.save()
-    objs = Products.objects.all()
+    objs = Product.objects.all()
     for obj in objs:
         print(obj)
 

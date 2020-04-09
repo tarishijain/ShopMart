@@ -21,5 +21,5 @@ urlpatterns = [
     path('', views.home, name = 'home'),
     path('aboutus', views.about, name = 'about'),
     path('contactus', views.contact, name = 'contact'),
-    path('AddProducts/', include('AddProducts.urls'))
+    path('Shop/', include('Shop.urls'))
 ]
