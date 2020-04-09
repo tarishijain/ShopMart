@@ -1,0 +1,16 @@
+{% extends "main_template.html" %}
+{% block title %} Welcome Page {% endblock %}
+{% block content %}
+
+<h2>Hello Everyone, Welcome to the Shopping Mart. <br> </h2>
+
+ You can shop for different categories such as :<br>
+  {% for items in category %}
+
+  {{items}}<br>
+
+  {% endfor %}  
+
+ <h1> Happy Shopping..!</h1>
+
+{% endblock %}
